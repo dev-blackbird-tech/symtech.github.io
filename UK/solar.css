@@ -1,0 +1,557 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+h3 {
+    font-weight: bolder;
+}
+
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 0.2px;
+    font-weight: bolder;
+    color: #000000;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+}
+
+h2 {
+    font-family: Roboto, sans-serif;
+}
+
+
+
+
+
+
+.black-text {
+    color: #000000 !important;
+}
+
+
+.btb-change {
+    color: #000000 !important;
+}
+
+.btb-change:hover {
+    color: white;
+}
+
+
+
+.nav-header {
+    background-color: transparent !important;
+    /* Ensure navbar starts transparent */
+    transition: background-color 0.3s;
+    /* Smooth transition for the color change */
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+}
+
+.nav-scrolled {
+    background-color: #ffffff !important;
+    /* Change to your desired color */
+}
+
+
+
+
+.caro-font {
+    text-align: center;
+    /* Center align the text */
+}
+
+.caro-b {
+    margin-top: 10px;
+    /* Add space between the paragraph and the button */
+    text-align: center;
+    /* Center align the button */
+}
+
+
+
+
+
+@media only screen and (min-width:768px) {
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        backdrop-filter: blur(40px);
+        border: none;
+    }
+
+}
+
+
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
+    --bs-offcanvas-width: 100%;
+    --bs-offcanvas-bg: #004AAD;
+}
+
+
+
+
+/* side bar */
+
+@media(max-width:988px) {
+    .side-bar {
+        background-color: rgba(146, 163, 189, 0.5);
+        backdrop-filter: blur(20px);
+    }
+
+    .ul-fs {
+        font-size: 1.4rem;
+        padding-top: 1.2rem;
+
+
+
+
+    }
+
+    .x-btn {
+        font-size: 1.9rem;
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+
+
+
+    }
+
+    .nav-item {
+        border-bottom: 1px solid rgb(0, 0, 0);
+        padding-top: 0.9rem;
+
+    }
+
+
+    .nav-btn {
+
+        border-radius: 0 !important;
+        background-color: white !important;
+        width: 100%;
+        border: none !important;
+        margin-bottom: 0.5rem;
+
+
+    }
+
+    .nav-btn {
+        color: black !important;
+    }
+
+
+}
+
+
+
+.nav-btn {
+    border-radius: 2rem;
+    background: rgba(11, 94, 215, 0);
+    border: 2px solid #004AAD;
+    font-size: 0.9rem;
+    color: #000000;
+
+
+
+
+}
+
+
+
+@media only screen and (min-width:768px) {
+    .nav-btn:hover a {
+        color: white !important;
+
+    }
+}
+
+
+
+
+
+
+.s-pad {
+    background-color: #a2d2ff;
+    border: none;
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.s-padi {
+    background-color: #a2d2ff;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #000000;
+    font-weight: bold;
+
+}
+
+
+input[type="email"] {
+    font-weight: bolder;
+}
+
+
+form input {
+    border: none !important;
+
+}
+
+.input-group {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+
+
+#translatingImage {
+    position: relative;
+    z-index: -1;
+    transition: transform 2s ease-in-out;
+}
+
+.img-move img {
+    position: absolute;
+    top: 40rem;
+    right: 2rem;
+    overflow-y: hidden;
+}
+
+
+@media (max-width: 1044px) {
+    .img-move img {
+        position: static;
+        margin-left: -13.9rem;
+        margin-top: -8rem;
+
+    }
+}
+
+.achieve {
+    background-color: #004AAD;
+}
+
+
+.size h1 {
+    font-size: clamp(20px, 3vw, 40px);
+}
+
+.size p {
+    font-size: clamp(12px, 3vw, 15px);
+}
+
+@media(max-width:985px) {
+    .size {
+        justify-content: space-evenly;
+    }
+
+}
+
+
+
+
+
+
+/* third section */
+.third-sec {
+    overflow-x: hidden;
+    background-color: hsla(120, 0%, 93%, 1);
+    background-image:
+        radial-gradient(at 96% 31%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 82% 95%, rgb(238, 221, 221) 0px, transparent 50%);
+}
+
+.energy {
+    font-size: clamp(15px, 3vw, 100px);
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.zip-btn {
+    background-color: black;
+    color: white;
+    padding: calc(10px + 0.3rem) calc(50px + 10%);
+    border-radius: 1.5rem;
+    font-size: clamp(12px, 3vw, 13px);
+}
+
+
+.zip-btn:hover {
+    background-color: #004AAD;
+    color: white;
+}
+
+.zip-form {
+    background-color: #EFEFEF;
+}
+
+.zip-p {
+    font-size: clamp(15px, 3vw, 15px);
+    font-style: italic;
+}
+
+.tk-cont {
+    font-size: clamp(25px, 3vw, 50px);
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* accordian */
+
+.accordion-flush .accordion-item .accordion-button {
+    background: none;
+    box-shadow: none;
+    background: #EFEFEF;
+    border-bottom: 1px solid #000000;
+
+
+}
+
+
+.accord {
+    background-color: #EFEFEF;
+}
+
+.accord-btn {
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    border: 2px black solid;
+}
+
+.accord-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+.accord-span {
+    display: flex;
+    align-items: center;
+}
+
+.accord-phone {
+    color: green;
+}
+
+.faqs {
+    font-size: clamp(40px, 3vw, 50px);
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.main-foot {
+    background-color: #020d19;
+    font-weight: 100;
+}
+
+
+footer .email-id {
+    text-decoration: underline;
+    letter-spacing: 0.03rem;
+    cursor: pointer;
+}
+
+
+
+#foot {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#foot .bi {
+    color: white;
+}
+
+#foot,
+.bi-facebook {
+    color: blue;
+
+}
+
+.foot-icons .bi-whatsapp {
+    background: green;
+    padding: 0.6rem;
+
+}
+
+.fa-facebook-f {
+    background: black;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    color: #004AAD;
+
+}
+
+.bi-twitter-x {
+    background: #000000;
+    padding: 0.6rem;
+
+}
+
+#foot ::placeholder {
+    color: white;
+}
+
+
+@media(max-width:980px) {
+
+    .ft-bd {
+        border-bottom: none !important;
+    }
+}
+
+form input {
+    border: none;
+    background: transparent;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button {
+    border: none;
+    background: none;
+}
+
+.foot-icons .bi {
+    font-size: 1.6rem;
+
+}
+
+.ft-bd {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+form input,
+select,
+textarea {
+    color: #ffffff;
+}
+
+
+.last-btn {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    font-weight: bolder;
+    color: white;
+    background-color: #000000;
+
+}
+
+.last-sec {
+    background-color: #F0F0F0;
+}
