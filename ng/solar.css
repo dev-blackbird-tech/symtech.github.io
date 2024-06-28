@@ -1,0 +1,378 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.01rem;
+    font-weight: bolder;
+}
+
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-header {
+    background-color: transparent !important;
+
+    /* Ensure navbar starts transparent */
+    transition: background-color 0.3s;
+    /* Smooth transition for the color change */
+    margin-bottom: 0;
+
+
+}
+
+.nav-scrolled {
+    background-color: #ffffff !important;
+    /* Change to your desired color */
+}
+
+
+
+.text-whit {
+    color: rgb(0, 0, 0) !important;
+}
+
+.text-whit:hover {
+    color: white
+}
+
+
+.change-color {
+    color: rgb(0, 0, 0) !important;
+}
+
+
+
+
+@media only screen and (min-width:768px) {
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        backdrop-filter: blur(40px);
+        border: none;
+    }
+
+}
+
+
+
+.offcanvas,
+.offcanvas-lg,
+.offcanvas-md,
+.offcanvas-sm,
+.offcanvas-xl,
+.offcanvas-xxl {
+    --bs-offcanvas-width: 100%;
+    --bs-offcanvas-bg: #004AAD;
+}
+
+
+
+/* side bar */
+
+@media(max-width:988px) {
+    .side-bar {
+        background-color: rgba(146, 163, 189, 0.5);
+        backdrop-filter: blur(20px);
+    }
+
+    .ul-fs {
+        font-size: 1.4rem;
+        padding-top: 1.2rem;
+
+
+
+
+    }
+
+    .x-btn {
+        font-size: 1.9rem;
+        position: absolute;
+        right: 1rem;
+        top: 0.5rem;
+
+
+
+    }
+
+    .nav-item {
+        border-bottom: 1px solid rgb(0, 0, 0);
+        padding-top: 0.9rem;
+
+    }
+
+    .nav-btn {
+
+        border-radius: 0 !important;
+        background-color: white !important;
+        width: 100%;
+        border: none !important;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .nav-btn a {
+        color: black !important;
+    }
+
+
+}
+
+
+
+
+.nav-btn {
+    border-radius: 2rem;
+    background: rgba(11, 94, 215, 0);
+    border: 2px solid #004AAD;
+    font-size: 0.9rem;
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (min-width:768px) {
+    .nav-btn:hover a {
+        color: white !important;
+
+    }
+}
+
+
+
+
+/* first section */
+
+.fst-sec {
+    background-image: url('Asset/comfortable-sofa-modern-lamp-elegant-home-decor-generated-by-ai.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+
+.fst-head {
+    color: #ffffff;
+    padding-left: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+.fst-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 1.3rem;
+    margin-left: 2rem;
+    background: none;
+    color: white;
+    border: 2px solid #004AAD;
+
+
+}
+
+
+
+.fst-btn:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/* seond section */
+.solar-bor {
+    border-right: 1px solid #000000;
+    margin-top: 2.5rem;
+}
+
+
+.solar-bor:nth-child(3n) {
+    border: none;
+}
+
+@media(max-width:989px) {
+    .solar-bor:nth-child(2n) {
+        border-right: none;
+    }
+}
+
+.solar-bor:nth-child(4n) {
+    border-left: 1px solid #000000;
+    border-right: none;
+}
+
+.solar-bin {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: clamp(12px, 3vw, 16px);
+
+}
+
+
+.no-1-art {
+    background-color: #EFEFEF;
+}
+
+
+
+
+/* third section */
+.third-sec {
+    overflow-x: hidden;
+    background-color: hsla(120, 0%, 93%, 1);
+    background-image:
+        radial-gradient(at 96% 31%, hsla(28, 100%, 74%, 1) 0px, transparent 50%),
+        radial-gradient(at 82% 95%, rgb(238, 221, 221) 0px, transparent 50%);
+}
+
+.energy {
+    font-size: clamp(15px, 3vw, 100px);
+    display: flex;
+    align-items: center;
+
+
+}
+
+
+.zip-btn {
+    background-color: black;
+    color: white;
+    padding: calc(10px + 0.3rem) calc(50px + 10%);
+    border-radius: 1.5rem;
+    font-size: clamp(12px, 3vw, 13px);
+}
+
+
+.zip-btn:hover {
+    background-color: #004AAD;
+    color: white;
+}
+
+.zip-form {
+    background-color: #EFEFEF;
+}
+
+.zip-p {
+    font-size: clamp(15px, 3vw, 15px);
+    font-style: italic;
+}
+
+.tk-cont {
+    font-size: clamp(25px, 3vw, 50px);
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* accordian */
+
+.accordion-flush .accordion-item .accordion-button {
+    background: none;
+    box-shadow: none;
+    background: #EFEFEF;
+    border-bottom: 1px solid #000000;
+
+
+}
+
+
+.accord {
+    background-color: #EFEFEF;
+}
+
+.accord-btn {
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    border: 2px black solid;
+}
+
+.accord-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+.accord-span {
+    display: flex;
+    align-items: center;
+}
+
+.accord-phone {
+    color: green;
+}
+
+.faqs {
+    font-size: clamp(40px, 3vw, 50px);
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/* footer */
+
+footer {
+    font-style: normal;
+    font-weight: bolder;
+    overflow-x: hidden;
+    background-color: #EFEFEF;
+}
+
+
+
+.f-row {
+    background-color: #FB0301;
+    font-size: large;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.boda {
+    border-bottom: 2px solid #004AAD;
+    border-top: 2px solid #004AAD;
+
+}
+
+@media(max-width:900px) {
+    .footer-logo {
+        font-size: 0.1rem;
+    }
+}
