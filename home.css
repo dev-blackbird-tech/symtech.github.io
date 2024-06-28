@@ -78,8 +78,8 @@ nav {
 
 @media(max-width:900px) {
     .side-bar {
-        background: rgba(0, 0, 0, 0.5) !important;
-        backdrop-filter: blur(20px) !important;
+        background-color: black !important;
+
     }
 
     .ul-fs {
@@ -104,9 +104,11 @@ nav {
         font-size: 1.5rem;
         position: relative;
         right: 0.8rem;
-        color: white !important;
+
 
     }
+
+
 
     a.nav-link {
         color: white !important;
@@ -127,7 +129,12 @@ nav {
 
 
 
+
+
 }
+
+
+
 
 .popup-button {
     padding: 5px 10px;
@@ -411,6 +418,9 @@ h2.region {
     color: white;
     background-color: #BB2D3B;
 }
+
+
+
 
 
 
