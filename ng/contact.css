@@ -80,8 +80,7 @@ body {
 
 @media(max-width:988px) {
     .side-bar {
-        background-color: rgba(146, 163, 189, 0.5);
-        backdrop-filter: blur(20px);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .ul-fs {
