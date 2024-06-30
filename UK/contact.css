@@ -50,7 +50,7 @@ h2 {
 
 
 .nav-header {
-    background-color: transparent !important;
+    background-color: white;
     /* Ensure navbar starts transparent */
     transition: background-color 0.3s;
     /* Smooth transition for the color change */
@@ -112,7 +112,7 @@ h2 {
 
 @media(max-width:988px) {
     .side-bar {
-        background-color: rgba(0, 0, 0, ) !important;
+        background-color: black;
 
     }
 
@@ -156,6 +156,12 @@ h2 {
         color: black !important;
     }
 
+
+    .nav-link {
+        color: white !important;
+
+
+    }
 
 }
 
