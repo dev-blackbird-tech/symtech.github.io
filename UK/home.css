@@ -107,7 +107,7 @@ h2 {
 
 @media(max-width:988px) {
     .side-bar {
-        background-color: rgba(0, 0, 0, );
+        background-color: black;
 
     }
 
@@ -131,7 +131,7 @@ h2 {
     }
 
     .nav-item {
-        border-bottom: 1px solid rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(255, 255, 255);
         padding-top: 0.9rem;
 
     }
@@ -151,6 +151,9 @@ h2 {
         color: black !important;
     }
 
+    .nav-link {
+        color: white !important;
+    }
 
 }
 

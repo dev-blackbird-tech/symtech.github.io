@@ -47,7 +47,7 @@ h2 {
 
 
 .nav-header {
-    background-color: transparent !important;
+    background-color: white;
     /* Ensure navbar starts transparent */
     transition: background-color 0.3s;
     /* Smooth transition for the color change */
@@ -57,10 +57,7 @@ h2 {
 
 }
 
-.nav-scrolled {
-    background-color: #ffffff !important;
-    /* Change to your desired color */
-}
+
 
 
 
@@ -109,7 +106,7 @@ h2 {
 
 @media(max-width:988px) {
     .side-bar {
-        background-color: rgba(0, 0, 0, );
+        background-color: black;
 
     }
 
@@ -133,7 +130,7 @@ h2 {
     }
 
     .nav-item {
-        border-bottom: 1px solid rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(255, 249, 249);
         padding-top: 0.9rem;
 
     }
@@ -152,6 +149,11 @@ h2 {
 
     .nav-btn {
         color: black !important;
+    }
+
+
+    .nav-link {
+        color: white !important;
     }
 
 
@@ -229,7 +231,7 @@ form input {
 
 .img-move img {
     position: absolute;
-    top: 40rem;
+    top: 41.5rem;
     right: 2rem;
     overflow-y: hidden;
 }
