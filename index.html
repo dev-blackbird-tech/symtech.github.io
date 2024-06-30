@@ -4,48 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <meta name="description"
-        content="SymTech offers comprehensive services in the UK including solar installations, bouncer security services, and travel agency solutions. Discover our sustainable solar energy solutions, advanced security options, and expert travel planning services. Contact us today to learn more.">
+        content="SymTech provides expert solar installations and CCTV services in Nigeria, alongside car sales. In the UK, we specialize in solar installations, security services, and travel agency solutions. Trust SymTech for comprehensive and professional services across multiple sectors">
     <meta name="keywords"
-        content="SymTech, UK services, solar installation UK, bouncer security UK, travel agency UK, renewable energy UK, event security, travel planning, security solutions, solar panels">
+        content="SymTech, solar installation, CCTV installation, car sales, Nigeria, UK, security services, travel agency, professional services, renewable energy, security solutions, travel solutions, solar energy, car dealership, CCTV systems">
+    <meta name="author" content="SymTech">
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="SymTech UK - Solar, Bouncer Security, and Travel Agency Services">
+    <meta property="og:title" content="SymTech - Comprehensive Services in Nigeria and the UK">
     <meta property="og:description"
-        content="SymTech offers comprehensive services in the UK including solar installations, bouncer security services, and travel agency solutions. Discover our sustainable solar energy solutions, advanced security options, and expert travel planning services. Contact us today to learn more.">
-    <meta property="og:url" content="https://www.symtech.com/uk">
+        content="SymTech offers solar installations and CCTV services in Nigeria, as well as car sales. In the UK, we provide solar installations, security services, and travel agency solutions.">
+    <meta property="og:url" content="https://www.symtech.com">
 
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SymTech UK - Solar, Bouncer Security, and Travel Agency Services">
+    <meta name="twitter:title" content="SymTech - Comprehensive Services in Nigeria and the UK">
     <meta name="twitter:description"
-        content="SymTech offers comprehensive services in the UK including solar installations, bouncer security services, and travel agency solutions. Discover our sustainable solar energy solutions, advanced security options, and expert travel planning services. Contact us today to learn more.">
+        content="SymTech offers solar installations and CCTV services in Nigeria, as well as car sales. In the UK, we provide solar installations, security services, and travel agency solutions.">
+
+
 
 
 
     <title>Home</title>
 
 
-    <link rel="icon" href="/asset/Logo2-Small.png" type="image/x-icon">
+    <link rel="icon" href="asset/Logo2-Small.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
 
 
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Open+Sans:wght@300&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="home.css">
 </head>
 
@@ -54,18 +63,35 @@
 
 
     <!-- start of navbar -->
-    <nav id="Navbar" class="navbar navbar-expand-lg    nav-header fixed-top   ">
+    <nav id="navBar" class="navbar navbar-expand-lg    fixed-top header">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img class="img-fluid " src="asset/IMG-20240214-WA0001-removebg-preview.png" alt="Logo" width="65"
-                    height="" class="d-inline-block align-text-center">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid " src="asset/Logo2-1-removebg-preview.png" alt="Logo" width="60" height=""
+                    class="d-inline-block align-text-center">
             </a>
 
+            <div>
+                <!-- Your header content here -->
+                <button id="openModal" class="d-lg-none popup-button ">Select Region</button>
+            </div>
 
-            <button class="navbar-toggler shadow-none border-0  pp" style="background-color: white;" type="button"
-                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <div id="myModal" class="modal   ">
+                <div class="modal-content">
+                    <span class="close d-none ">&times;</span>
+                    <h1 class="text-center ">Select Region</h1>
+                    <p class="text text-center "> Our service differs across different region</p>
+                    <div class="d-flex justify-content-center ">
+                        <a href="ng/index.html"><img class="me-5 " src="asset/icons8-nigeria-flag-48.png" alt=""></a>
+                        <a href="UK/index.html"><img class="img-fluid " src="asset/united-kingdom.png" width="50"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="navbar-toggler shadow-none border-0  pp" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="bi bi-sliders2 nav-icon"></i>
             </button>
 
 
@@ -74,344 +100,246 @@
             <!-- side-bar -->
             <div class="offcanvas offcanvas-end side-bar" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
-                <div class="">
+                <div class="offcanvas-header">
+                    <h2 class="region text-center">Select Region</h2>
+
                     <!-- btn-close -->
-                    <button type="button" class="btn-close btn-close-white shadow-none x-btn d-lg-none me-md-5  "
+                    <button type="button" class="btn-close btn-close-white shadow-none x-btn"
                         data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     <!-- end-btn-close -->
                 </div>
 
+                <div class=" d-flex justify-content-center flag-line d-lg-none ">
+                    <a href="ng/index.html"><img class="img-fluid me-4  " src="asset/icons8-nigeria-flag-48.png"
+                            width="50" alt=""></a>
+                    <a href="UK/index.html"><img class="img-fluid " src="asset/united-kingdom.png" width="50"></a>
+                </div>
+
+
 
 
                 <!-- side-bar-body -->
-                <div class="offcanvas-body d-flex flex-column px-4   p-lg-0  flex-lg-row    ">
+                <div class="offcanvas-body d-flex  flex-column px-4  p-lg-0  flex-lg-row   ">
                     <ul
-                        class="navbar-nav justify-content-start justify-content-lg-center d-block d-lg-flex  align-items-center flex-grow-1 pe-3 ul-fs ">
+                        class="navbar-nav  justify-content-lg-center d-block d-lg-flex  align-items-center flex-grow-1 pe-3 ul-fs    ">
 
-                        <li class="nav-item dropdown  ">
-                            <a class="nav-link dropdown-toggle text-white  " href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Service
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="solar.html">Travel Agency</a></li>
-                                <li><a class="dropdown-item" href="solar.html">Solar</a></li>
-                                <li><a class="dropdown-item" href="security.html">Security</a></li>
-                            </ul>
+                        <li class="nav-item mx-2    ">
+                            <a class="nav-link text-white " href="index.html">Home</a>
                         </li>
-
 
                         <li class="nav-item mx-2 ">
-                            <a class="nav-link text-white  " href="#">Product</a>
+                            <a class="nav-link text-white " href="about.html">About us</a>
                         </li>
-                        <li class="nav-item mx-2 ">
-                            <a class="nav-link text-white " href="contact.html">Contact</a>
+                        <li class="nav-item mx-2 last-item ">
+                            <a class="nav-link text-white " href="#">Foundation </a>
                         </li>
-
                     </ul>
 
-                    <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center gap-3   ">
-                        <button class="btn btn-primary nav-btn "> <a href="#"
-                                class=" text-decoration-none px-3  btb ">Request Quote </a></button>
-                        <p class="d-lg-none text-white mb-5 " style="font-family: 'Josefin Sans', sans-serif;">©
-                            Copyright
-                            2024 Symtech - All Rights Reserved
-                        </p>
+                    <div>
+                        <div class="dropdown  bg-none d-lg-none   ">
+                            <button class=" contact  w-100  dropdown-toggle shadow-none border-0 " type="button"
+                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                contact us
+                            </button>
+                            <ul class="dropdown-menu w-100 rounded-0  border-0   " aria-labelledby="dropdownMenuButton">
+                                <div class="">
+                                    <li><a class="dropdown-item" href="ng/contact.html"><img class="img-fluid "
+                                                src="asset/icons8-nigeria-flag-48.png" alt="" width="20">
+                                            NIGERIA</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="UK/contact.html"><img class="img-fluid "
+                                                src="asset/united-kingdom.png" alt="" width="20"> UK</a></li>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div class="icons d-lg-none d-flex justify-content-center   ">
+                            <div class="me-5 text-primary ">
+                                <i class="bi bi-facebook"></i>
+                            </div>
+                            <div class="me-5  text-white ">
+                                <i class="bi bi-twitter-x"></i>
+                            </div>
+                            <div class="text-danger ">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                        </div>
                     </div>
+
+
+
+                    <div class="dropdown  bg-none d-none d-lg-block   ">
+                        <button class="btn btn-danger  dropdown-toggle shadow-none border-0 " type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            contact us
+                        </button>
+                        <ul class="dropdown-menu border-0   " aria-labelledby="dropdownMenuButton">
+                            <div class="">
+                                <li><a class="dropdown-item" href="ng/contact.html"><img class="img-fluid "
+                                            src="asset/icons8-nigeria-flag-48.png" alt="" width="20"> NIGERIA</a>
+                                </li>
+                                <li><a class="dropdown-item" href="UK/contact.html"><img class="img-fluid "
+                                            src="asset/united-kingdom.png" alt="" width="20"> UK</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="dropdown  bg-none d-none d-lg-block mx-3 ">
+                        <button class="btn btn-danger  dropdown-toggle shadow-none border-0 " type="button"
+                            id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Region
+                        </button>
+                        <ul class="dropdown-menu border-0   " aria-labelledby="dropdownMenuButton">
+                            <div class="">
+                                <li><a class="dropdown-item" href="ng/index.html"><img class="img-fluid "
+                                            src="asset/icons8-nigeria-flag-48.png" alt="" width="20"> NIGERIA</a>
+                                </li>
+                                <li><a class="dropdown-item" href="UK/index.html"><img class="img-fluid "
+                                            src="asset/united-kingdom.png" alt="" width="20"> UK</a></li>
+                            </div>
+                        </ul>
+                    </div>
+
+
+
+
+
+
                 </div>
 
             </div>
     </nav>
 
 
-    <!-- end of navbar -->
+
+
+
+
 
 
     <!-- carousel -->
     <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval=" 4000">
-                <img src="asset/travel-concept-with-worldwide-landmarks (1).jpg" class="w-100 d-block " alt="">
 
-                <div class="carousel-caption">
-                    <h1 style="font-family: Roboto, sans-serif;" class="text-white text-center   ">SYMTECH TRAVEL
-                        AGENCY
+            <div class="carousel-item active " data-bs-interval="4000">
+                <img src="asset/full-shot-travel-concept-with-landmarks (1).jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h1 class="sym">SYMTECH TRAVEL AGENCY
                     </h1>
-                    <p class="text-white text-center ">Discover personalized travel experiences. From exotic getaways to
-                        city adventures, our expert team crafts unforgettable journeys tailored just for you</p>
-
+                    <p class="text-white text-center">Discover personalized travel experiences. From exotic getaways to
+                        city adventures, our expert team crafts unforgettable journeys tailored just for you.<br> Trust
+                        Symtech Travel to make your dream vacation a reality.</p>
                 </div>
 
             </div>
 
 
-
-            <div class="carousel-item " data-bs-interval="2000">
-                <img src="asset/solar pic.jpg" class="w-100  d-block " alt="">
-
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="asset/portrait-male-security-guard-with-barbed-wire-fence.jpg" class="d-block w-100"
+                    alt="...">
                 <div class="carousel-caption ">
-                    <h1 style="font-family: Roboto, sans-serif;" class="text-white text-center">SYMTECH SOLAR</h1>
-                    <p class="text-white text-center">
-                        Discover the champions of solar prowess and security prowess.</p>
+                    <h1 class="sym">SYMTECH SECURITY</h1>
+                    <p class="text-white text-center">At Symtech Security, we specialize in providing top-notch security
+                        services tailored to meet your unique needs.<br> Whether you need professional bouncers for your
+                        event, robust corporate security solutions, or personal protection.</p>
                 </div>
-
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="ng/Asset/security-camera-watching-city_1137-63.avif" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h1 class="sym">SYMTECH ICT/CCTV</h1>
+                    <p class="text-white text-center">Discover our ICT expertise: structured cabling, clean UPS
+                        installs, fire alarms,<br> plus CCTV,
+                        electric fencing, and car tracking sales/installations.</p>
+                </div>
 
             </div>
 
 
 
             <div class="carousel-item">
-                <img src="asset/portrait-male-security-guard-with-uniform (1).jpg" class="w-100  d-block " alt="">
-
+                <img src="ng/Asset/28532.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption ">
-                    <h1 style="font-family: Roboto, sans-serif;" class="text-white text-center ">SYMTECH SECURITY
-                    </h1>
-                    <p class="text-center ">At Symtech Security, we specialize in providing top-notch security
-                        services tailored to meet your unique needs.</p>
+                    <h1 class=" sym">SYMTECH AUTOMOBILE</h1>
+                    <p class="text-white text-center"> We specialize in the sales and delivery of various types of
+                        automobiles <br> in
+                        Nigeria.</p>
                 </div>
 
             </div>
-        </div>
 
-
-
-    </div>
-
-
-    <section class=" py-md-4 ">
-        <div class="container ">
-            <div class="row mt-0  gy-3 gy-lg-0 gx-0 gx-md-3 gx-lg-0   ">
-                <div class="col-md-6  col-12   relative-form  ">
-                    <form class="py-5  rounded-lg-4 " id="relative-form">
-                        <h3 class="pb-3 " style="font-weight: bolder; color: white; text-align: center;">Request Quote
-                            Form</h3>
-                        <div class="form-group ">
-                            <label style="color: white;" for="name">Personal information</label>
-                            <input type="text" class="form-control form-control shadow-none rounded-0 " id="name"
-                                placeholder="name">
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-group my-3 ">
-                                    <label for="number"></label>
-                                    <input type="text" class="form-control form-control shadow-none rounded-0 "
-                                        id="number" placeholder="Phone">
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-group my-3  ">
-                                    <label for="email"></label>
-                                    <input type="email" class="form-control form-control shadow-none rounded-0"
-                                        id="email" placeholder="Email">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="form-group my-2 ">
-                            <label class="text-white " for="message">Message</label>
-                            <textarea class="form-control form-control shadow-none rounded-0 " id="message" rows="3"
-                                placeholder="Brief description of what you want"></textarea>
-                        </div>
-                        <button type="submit" style="background-color: black; width: 100%;"
-                            class="btn text-white fb rounded-0   mt-3">Get A Quote
-                        </button>
-                        <div class="mt-2 ">
-                            <div class="form-end">
-                                <p class="text-white text-center  ">or Give us a call +44-7494245001</p>
-                            </div>
-                            <p class=" size text-white  text-center mt-2  ">The support Center Is Available 24/7</p>
-                        </div>
-                    </form>
-
-                </div>
-
-                <div class="col-md-6  ">
-                    <div class="row cicle">
-                        <div class="col-md-6">
-                            <i class="fa fa-plane"></i>
-                            <p class="mb-1 mt-3 ">Travel Agency</p>
-                            <p>SymTech Travel Agency delivers customized travel planning and hassle-free booking.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <i class="fa fa-solar-panel"></i>
-                            <p class="mb-1  mt-3 ">Solar</p>
-                            <p>SymTech Solar offers efficient, sustainable solar panel installations and services.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <i class="fa fa-solar-panel"></i>
-                            <p class="mb-1  mt-3 ">Security</p>
-                            <p>
-                                SymTech offers professional bouncer security services for events and venues.</p>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-5">
-        <h1 class="text-center big">OUR COMPANY</h1>
-        <div class="d-flex justify-content-center">
-            <div class="d1">Solar</div>
-            <div class="px-1">Travel Agency</div>
-            <div class="d1">Security</div>
-        </div>
-    </section>
-
-
-
-    <div class="container mt-4">
-        <div class="row justify-content-center gy-2">
-
-            <div class="col-12 col-md-4">
-                <div>
-                    <img class=" img-fluid  img-curve " src="asset/solar pic.jpg" alt="">
-                </div>
-
-                <h2 class="text-center mt-2 mt-lg-5">
-                    Symtect Solar
-                </h2>
-                <p class="text-center">
-                    Efficient, sustainable solar panel installations and services.
-                </p>
-                <div class="d-flex justify-content-center">
-                    <a href="solar.html"> <button class="mile-2 mt-0 mt-lg-1 mb-1">Learn more <i
-                                class="fa-solid fa-arrow-right"></i>
-                        </button></a>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-md-4 ">
-                <div>
-                    <img class=" img-fluid  img-curve "
-                        src="asset/airplane-taking-off-sunset-scene-generative-ai (1).jpg" alt="">
-                </div>
-                <h2 class="text-center mt-2 mt-lg-5">
-                    Symtect Travel
-                </h2>
-                <p class="text-center">
-                    Customized travel planning and hassle-free booking.
-                </p>
-                <div class="d-flex justify-content-center">
-                    <a href="#"><button class="mile-2 mt-0 mt-lg-1 mb-1">Learn more <i
-                                class="fa-solid fa-arrow-right"></i>
-                        </button></a>
+            <div class="carousel-item">
+                <img src="ng/Asset/iStock-624488966.webp" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h1 class="sym">SYMTECH SOLAR</h1>
+                    <p class="text-white text-center">
+                        Discover the champions of solar prowess and security prowess.</p>
                 </div>
 
             </div>
-            <div class="col-12 col-md-4">
-                <div>
-                    <img class=" img-fluid  img-curve " src="asset/portrait-male-security-guard-with-uniform (1).jpg"
-                        alt="">
-                </div>
-                <h2 class="text-center mt-2 mt-lg-5">
-                    Symtect Security
-                </h2>
-                <p class="text-center">
-                    Symtech bouncer security services for events and venues.
-                </p>
-                <div class="d-flex justify-content-center">
-                    <a href="security.html"> <button class="mile-2 mt-0 mt-lg-1 ">Learn more <i
-                                class="fa-solid fa-arrow-right"></i> </button></a>
-                </div>
-            </div>
-
-
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 
+    <!-- carousel end -->
 
 
 
-    <section id="chartSection" class="container   mt-5">
-        <h1 class="px-md-5 px-3 pb-3">Who we are ?</h1>
-        <article class="row px-md-5 px-3">
-            <div class="col-md-5 col-lg-4">
-                <div class="chart">
-                    <div class="bar" data-text="100% Efficiency" data-height="80%"></div>
-                    <div class="bar" data-text="95% Fast" data-height="70%"></div>
-                    <div class="bar" data-text="100% Quality" data-height="80%"></div>
-                </div>
-            </div>
 
-            <div class="col-md-7 col-lg-8 fast">
-                <div class="d-flex align-content-center">
-                    <div class="d-flex mx-4 mt-4 mt-md-0">
-                        <div>
-                            <h1 class="text-danger">25</h1>
-                        </div>
-                        <div class="mt-1 mx-1">
-                            <p class="py-0 my-0">Years</p>
-                            <p class="my py-0 fast">Experince</p>
+    <section class="style py-5  ">
+        <div class="container overflow-x-hidden  ">
+            <div class="row gx-0 ">
+                <div class="col-md-6 right">
+                    <div class="img-main-wrap ">
+                        <img class="img-fluid img-shift w-100 bg-black  " src="asset/Nnonso09e0-removebg-preview.png"
+                            alt="">
+                        <div class="shift mb-0 ">
+                            <h4 class="text-white">CEO</h4>
+                            <h1 class="text-white ">Nonnso<br>Egboruche</h1>
+                            <button class="folo">Follow <i class="bi bi-instagram"></i></button>
                         </div>
                     </div>
 
-                    <div class="d-flex mt-4 mt-md-0">
-                        <div>
-                            <h1 class="text-danger">1M</h1>
+                </div>
+                <div class="col-md-6 left bg-white ">
+                    <h1 class="mt-4 px-3">Who we are</h1>
+                    <p class="px-3 ">At SymTech, we pride ourselves on being a versatile company that integrates
+                        advanced technology and exceptional service delivery. Our team comprises highly skilled
+                        professionals with expertise in various fields, ensuring that we can offer comprehensive
+                        solutions under one roof.</p>
+                    <div class="row  px-3 ">
+                        <div class="col-md-5 mb-3">
+                            <button class="btn-vm mb-md-3 " id="missionBtn">Mission</button>
+                            <button class="btn-vm" id="visionBtn">Vision</button>
                         </div>
-                        <div class="mt-1 mx-1">
-                            <p class="py-0 my-0">Users</p>
-                            <p class="my py-0 fast">Satisfation</p>
+                        <div class="col-md-6 content">
+                            <div class="mission" id="missionContent">
+                                <h2 class="">Mission</h2>
+                                <p class="m-c px-md-1 w-100  ">SymTech pioneers security and energy solutions,
+                                    empowering individuals and businesses
+                                    for sustainable, secure environments, surpassing expectations, and enhancing
+                                    community well-being.
+
+                                </p>
+                            </div>
+                            <div class="vision" id="visionContent">
+                                <h2>Vision</h2>
+                                <p class="m-c px-md-1 ">SymTech envisions leading integrated security and energy
+                                    solutions, fostering a world
+                                    where every individual feels secure and empowered.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <p class="mx-0 mx-md-4 fs-5">SYMTECH Group was incorporated in Nigeria as an Automobile,
-                    Solar, Inverter and ICT then expanded to the UK. The company was incorporated to fill the service
-                    quality gap lacking
-                    in ICT, Solar,Inverter and Automobile infrastructure industry today.</p>
-
-                <a href="https://wa.me/+447494245001"><button class=" pat-bt mx-0 mx-md-4 fs-5"> Patronize us
-                        Today</button></a>
-            </div>
-
-
-        </article>
-    </section>
-
-
-    <section class="container mt-5 last-c py-4 px-5">
-
-        <div class="row py-4">
-            <div class="col-12 col-md-12 col-lg-3">
-
-                <div class="text-center">
-                    <img class="rounded-3" src="asset/callback-284x160.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="col-12 col-md-12 col-lg-5  mx-4">
-                <p class="fs-2 mb-0 mt-2 text-center">
-                    Request a Call-Back</p>
-                <p class="fs-2 text-danger mt-0 pt-0 text-center">
-                    "Click Here"</p>
-
-                <p class="text-center">
-                    We will call back within an hour
-                </p>
-            </div>
-
-            <div class="col-12 col-md-12 col-lg-3 text-md-center ">
-                <p class="text-center">
-                    We will not contact you first unless you request that we do so.
-                </p>
-
-                <p class="text-center">
-
-                    BEWARE OF SCAMMERS
-                </p>
-
-                <a href="https://wa.me/+447494245001">
-                    <p class="text-center text-black">
-                        <i class="bi-solid bi-whatsapp fs-4 text-success"></i> Chat us Here
-                    </p>
-                </a>
-
 
             </div>
         </div>
@@ -432,144 +360,106 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- footer -->
-    <footer class=" pt-3 main-foot  text-white mt-2  ">
-        <footer class=" pt-2  mx-4 px-lg-5   d-flex justify-content-lg-center ">
-            <div class="row ft-bd container py-lg-4">
-                <div class="col-12 col-lg-3 ">
-                    <img src="asset/IMG-20240214-WA0001-removebg-preview.png" alt="uk footer" width="200">
-                    <p class="py-lg-4 py-2 ">
-
-                        We specialize in the installation of solar panels, Additionally, we provide comprehensive
-                        security
-                        solutions and expert services for travel agencies.
-                    </p>
-
-
-
-                </div>
-
-
-
-                <div class="col-12 col-lg-3 mt-3 ">
-                    <h3>Office</h3>
-                    <div class="mt-3 ">
-                        <p class="p-0 mb-0  ">41A PACK HORSE ROAD</p>
-                        <p class="p-0 m-0 ">Gerread Cross Bukinghamshire</p>
-                        <p>SL98PE UK</p>
-                        <P class="email-id">uksupported@nacet.group</P>
-                        <a href="https://wa.me/+447494245001">
-                            <p>+44-7494245001</p>
-                        </a>
-
+    <!--FOOTER-->
+
+
+
+    <footer class="bg-black   text-white py-2 main-footer  ">
+        <div class="container">
+            <div class="wrapper py-5 p-lg-5  mb-lg-0  ">
+                <div class="row d-flex footer-1 p-5   ">
+                    <div class="col-12 col-lg-4  ">
+                        <div class="d-flex mb-3 mb-lg-0    ">
+                            <img class="img-fluid mb-lg-2 " src="asset/Logo2-1-removebg-preview.png" alt="footer logo"
+                                height="300" width="150">
+                        </div>
+
+                        <p>We are specialist in Sales and Installation of Inverters, Batteries and Solar Panels. The
+                            Solar System is the use of solar panels or also called photovoltaic cells to convert the
+                            energy from sunlight directly into electricity.</p>
                     </div>
+                    <div class="col-12 col-lg-4 mb-4   ">
+                        <h3 class="mx-lg-5">
+                            <strong>Contact Info</strong>
+                        </h3>
+                        <ul class="list-unstyled mx-lg-5  ">
+                            <li class="mb-1">+234-8033764756</li>
+                            <a href="https://wa.me/+447494245001">
+                                <li class="mb-1">+44-7494245001</li>
+                            </a>
+                            <li class="mb-1">support@nacet.group</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4 ">
+                        <h3>Quick Links</h3>
+                        <ul class="list-unstyled quik-links-end ">
+                            <a href="index.html">
+                                <li class="mb-4 ">Home</li>
+                            </a>
+                            <a href="about.html">
+                                <li class="mb-4 ">About us</li>
+                            </a>
+                            <li class="mb-4 ">Foundation</li>
 
+                        </ul>
+                    </div>
                 </div>
+                <div class="row p-5 d-flex mx-lg-5 justify-content-lg-around  ">
+                    <div class="col-12 col-lg-4">
+                        <P>
+                            Please follow our official social media handle
+                        </P>
+                        <div class="d-flex icon">
+                            <div class="">
+                                <a href="#"><span class="text-danger">
+                                        <i class="bi bi-instagram"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class=" mx-3 ">
+                                <a href=""><span class="text-white ">
+                                        <i class="bi bi-twitter-x"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="">
+                                    <i class="bi bi-facebook "></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="d-lg-none"></p>
+                    <div class="col-12 col-lg-4  ">
+                        <form action="" method="post">
+                            <div class="">
+                                <label for="email" class="form-label">Subscribe to our newsletter</label>
+                                <div class="input-group ">
+                                    <input type="email" class="form-control ft-mail" id="email"
+                                        placeholder="Enter your email">
+                                    <div class="row">
+                                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">
+                                        </div>
+                                        <div hidden="hidden" data-form-alert-danger=""
+                                            class="alert alert-danger col-12">
+                                            Oops...! some problem!
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary footer-btn">Submit</button>
+                                </div>
+                            </div>
 
-
-                <div class="col-12 col-lg-2 mt-3 ">
-                    <h3>Links</h3>
-                    <div class="mt-3 ">
-                        <a href="#">
-                            <p class="p-0 mb-2 ">Travel Agency</p>
-                        </a>
-                        <a href="security.html">
-                            <p class="p-0 mb-2">Security</p>
-                        </a>
-                        <a href="solar.html">
-                            <p class="p-0 m-0 ">Solar</p>
-                        </a>
-
+                        </form>
                     </div>
                 </div>
 
-
-                <div class="col-12 col-lg-4 mt-3 justify-content-lg-end ">
-                    <h3>Newsletter</h3>
-                    <form id="foot" class="d-flex justify-content-lg-between align-content-center py-lg-2" action="">
-                        <i class="bi bi-envelope"></i>
-                        <input type="email" class="w-100" placeholder="Enter your email address">
-                        <button type="submit"><i class="bi bi-arrow-right"></i></button>
-                    </form>
-
-                    <div class="foot-icons mt-lg-5 mt-4 ">
-                        <i class="bi bi-facebook "></i>
-                        <i class="bi bi-twitter-x mx-2"></i>
-                        <a href="https://wa.me/+447494245001"><i class="bi bi-whatsapp"></i></a>
-                    </div>
-                </div>
             </div>
-
-        </footer>
-        <div class="mt-0 pt-0 copy  d-flex  justify-content-center align-content-center ">
-            <p class="m-0 p-0 py-3 align-content-center">
-                &copy; Copyright 2024 Symtech - All Rights Reserved
-            </p>
         </div>
+
     </footer>
+    <div class="d-flex justify-content-center copyright text-white py-4 align-items-center ">
+        &copy; Copyright 2024 Symtech - All Rights Reserved
+    </div>
 
 
 
@@ -598,43 +488,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Bootstrap JavaScript and jQuery libraries -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
 
     <script src="home.js"></script>
 </body>
