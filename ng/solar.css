@@ -94,7 +94,7 @@ a {
 @media(max-width:988px) {
     .side-bar {
         background-color: rgb(0, 0, 0);
-      
+
     }
 
     .ul-fs {
@@ -117,7 +117,7 @@ a {
     }
 
     .nav-item {
-        border-bottom: 1px solid rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(255, 255, 255);
         padding-top: 0.9rem;
 
     }
@@ -134,6 +134,11 @@ a {
 
     .nav-btn a {
         color: black !important;
+    }
+
+
+    .nav-link {
+        color: white !important;
     }
 
 

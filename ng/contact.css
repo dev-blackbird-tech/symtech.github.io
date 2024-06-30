@@ -80,7 +80,7 @@ body {
 
 @media(max-width:988px) {
     .side-bar {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: black;
     }
 
     .ul-fs {
@@ -103,7 +103,7 @@ body {
     }
 
     .nav-item {
-        border-bottom: 1px solid rgb(0, 0, 0);
+        border-bottom: 1px solid rgb(255, 255, 255);
         padding-top: 0.9rem;
 
     }
@@ -120,6 +120,10 @@ body {
 
     .nav-btn a {
         color: black !important;
+    }
+
+    .nav-link {
+        color: white !important;
     }
 
 
