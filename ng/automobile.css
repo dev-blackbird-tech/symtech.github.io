@@ -397,6 +397,7 @@ a {
     padding: 0.7rem 1rem;
     border: 2px solid black;
     background: none;
+    color: black;
 }
 
 .btn-car:hover {
