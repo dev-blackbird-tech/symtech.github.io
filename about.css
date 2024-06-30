@@ -1,5 +1,6 @@
 .header {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: white;
 }
 
 
@@ -47,16 +48,14 @@ nav {
     color: black;
 }
 
-.white-text {
-    color: white !important;
-}
+
 
 /* side bar */
 
 @media(max-width:900px) {
     .side-bar {
-        background: rgba(0, 0, 0,) !important;
-     
+        background: black !important;
+
     }
 
     .ul-fs {
@@ -75,6 +74,7 @@ nav {
 
     .nav-item {
         padding-bottom: 0.5rem;
+        border-bottom: 1px solid black;
     }
 
     .x-btn {
@@ -85,9 +85,7 @@ nav {
 
     }
 
-    a.nav-link {
-        color: white !important;
-    }
+
 
     .nav-btn {
 
@@ -102,6 +100,10 @@ nav {
         color: black !important;
     }
 
+
+    .nav-link {
+        color: white !important;
+    }
 
 
 }

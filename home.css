@@ -98,6 +98,7 @@ nav {
 
     .nav-item {
         padding-bottom: 0.5rem;
+        border-bottom: 1px solid black;
     }
 
     .x-btn {
@@ -110,7 +111,7 @@ nav {
 
 
 
-    a.nav-link {
+    .nav-link {
         color: white !important;
     }
 

@@ -21,25 +21,6 @@ window.onclick = function (event) {
 
 
 
-let nav = document.querySelector('#navBar')
-let navLinks = document.querySelectorAll('.nav-link')
-
-window.addEventListener('scroll', function () {
-    if (window.scrollY > 10) {
-        nav.classList.add('nav-scrolled')
-        btn.classList.add('black-text')
-        navLinks.forEach((links) => {
-            links.classList.add('black-text')
-        })
-    } else {
-        nav.classList.remove("nav-scrolled")
-        btn.classList.remove('black-text')
-        navLinks.forEach((links) => {
-            links.classList.remove('black-text')
-        })
-    }
-})
-
 
 
 
