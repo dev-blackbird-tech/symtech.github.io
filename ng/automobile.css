@@ -302,6 +302,51 @@ a {
     padding-bottom: 4rem;
 }
 
+
+.card-container .popup-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: inherit;
+    display: none;
+
+}
+
+.card-container .popup-img .times {
+    position: absolute;
+    top: 5rem;
+    right: 15px;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+}
+
+.card-container .popup-img img {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 50%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    border-radius: 3rem;
+    height: 500px;
+    width: 750px;
+    object-fit: cover;
+
+}
+
+@media (max-width:988px) {
+
+    .card-container .popup-img img {
+        width: 95%;
+    }
+}
+
+
+
 .card-width {
     width: 15rem;
 }

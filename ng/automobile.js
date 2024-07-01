@@ -34,60 +34,96 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const imageSources = ['Asset/1409e0.jpg', 'Asset/1909e0.jpg', 'Asset/609e0.jpg', 'Asset/2009e0.jpg', 'Asset/1509e0.jpg'];
 let currentImageIndex = 0;
-function changeImg() {
-    let displayImg = document.querySelector('.img1');
+let popupActive = false;
 
-    currentImageIndex = (currentImageIndex + 1) % imageSources.length;
-    displayImg.src = imageSources[currentImageIndex];
-
-
-
+function openPopup(src) {
+    document.querySelector('.popup-img img').src = src;
+    document.querySelector('.popup-img').style.display = "block";
+    popupActive = true;
 }
 
-const imageSources1 = ['Asset/909e0.jpg', 'Asset/1309e0.jpg', 'Asset/809e0.jpg', 'Asset/1609e0.jpg', 'Asset/1209e0.jpg', 'Asset/1709e0.jpg']
+function closePopup() {
+    document.querySelector('.popup-img').style.display = "none";
+    popupActive = false;
+}
 
+function changeImg() {
+    if (popupActive) {
+        currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+        document.querySelector('.popup-img img').src = imageSources[currentImageIndex];
+    } else {
+        let displayImg = document.querySelector('.img1');
+        openPopup(displayImg.src);
+    }
+}
+
+document.querySelector('.img1').addEventListener('click', changeImg);
+document.querySelector('.popup-img img').addEventListener('click', changeImg);
+document.querySelector('.popup-img .times').addEventListener('click', closePopup);
+
+// Repeat similar functions for other image sets (imageSources1, imageSources2, etc.)
+
+const imageSources1 = ['Asset/909e0.jpg', 'Asset/1309e0.jpg', 'Asset/809e0.jpg', 'Asset/1609e0.jpg', 'Asset/1209e0.jpg', 'Asset/1709e0.jpg'];
 let currentImageIndex1 = 0;
 
 function changeImg1() {
-    let displayImg1 = document.querySelector('.img2');
-
-    currentImageIndex = (currentImageIndex + 1) % imageSources1.length;
-    displayImg1.src = imageSources1[currentImageIndex];
+    if (popupActive) {
+        currentImageIndex1 = (currentImageIndex1 + 1) % imageSources1.length;
+        document.querySelector('.popup-img img').src = imageSources1[currentImageIndex1];
+    } else {
+        let displayImg1 = document.querySelector('.img2');
+        openPopup(displayImg1.src);
+    }
 }
 
+document.querySelector('.img2').addEventListener('click', changeImg1);
 
-const imageSources2 = ['Asset/3309e0.jpg', 'Asset/3209e0.jpg', 'Asset/3509e0.jpg', 'Asset/3409e0.jpg']
+// Repeat for the other images
+
+const imageSources2 = ['Asset/3309e0.jpg', 'Asset/3209e0.jpg', 'Asset/3509e0.jpg', 'Asset/3409e0.jpg'];
 let currentImageIndex2 = 0;
 
 function changeImg2() {
-    let displayImg2 = document.querySelector('.img3');
-
-    currentImageIndex = (currentImageIndex + 1) % imageSources2.length;
-    displayImg2.src = imageSources2[currentImageIndex];
+    if (popupActive) {
+        currentImageIndex2 = (currentImageIndex2 + 1) % imageSources2.length;
+        document.querySelector('.popup-img img').src = imageSources2[currentImageIndex2];
+    } else {
+        let displayImg2 = document.querySelector('.img3');
+        openPopup(displayImg2.src);
+    }
 }
 
+document.querySelector('.img3').addEventListener('click', changeImg2);
 
-
-
-const imageSources4 = ['Asset/209e0.jpg', 'Asset/709e0.jpg', 'Asset/409e0.jpg', 'Asset/509e0.jpg', 'Asset/609e0.jpg']
+const imageSources4 = ['Asset/209e0.jpg', 'Asset/709e0.jpg', 'Asset/409e0.jpg', 'Asset/509e0.jpg', 'Asset/609e0.jpg'];
 let currentImageIndex4 = 0;
 
 function changeImg4() {
-    let displayImg4 = document.querySelector('.img5');
-
-    currentImageIndex = (currentImageIndex + 1) % imageSources4.length;
-    displayImg4.src = imageSources4[currentImageIndex];
+    if (popupActive) {
+        currentImageIndex4 = (currentImageIndex4 + 1) % imageSources4.length;
+        document.querySelector('.popup-img img').src = imageSources4[currentImageIndex4];
+    } else {
+        let displayImg4 = document.querySelector('.img5');
+        openPopup(displayImg4.src);
+    }
 }
 
+document.querySelector('.img5').addEventListener('click', changeImg4);
 
-
-
-const imageSources5 = ['Asset/0109e0.jpg', 'Asset/01_309e0.jpg', 'Asset/01_709e0.jpg',]
+const imageSources5 = ['Asset/0109e0.jpg', 'Asset/01_309e0.jpg', 'Asset/01_709e0.jpg'];
 let currentImageIndex5 = 0;
 
 function changeImg5() {
-    let displayImg5 = document.querySelector('.img6');
-
-    currentImageIndex = (currentImageIndex + 1) % imageSources5.length;
-    displayImg5.src = imageSources5[currentImageIndex];
+    if (popupActive) {
+        currentImageIndex5 = (currentImageIndex5 + 1) % imageSources5.length;
+        document.querySelector('.popup-img img').src = imageSources5[currentImageIndex5];
+    } else {
+        let displayImg5 = document.querySelector('.img6');
+        openPopup(displayImg5.src);
+    }
 }
+
+document.querySelector('.img6').addEventListener('click', changeImg5);
+
+// Event listener for closing the popup
+document.querySelector('.popup-img .times').addEventListener('click', closePopup);
