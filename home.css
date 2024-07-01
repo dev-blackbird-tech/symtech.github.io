@@ -4,6 +4,17 @@
 
 
 
+h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: bolder;
+}
+
+.aft-h{
+    font-weight: bolder;
+}
+
+
+
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
