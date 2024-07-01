@@ -32,98 +32,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const imageSources = ['Asset/1409e0.jpg', 'Asset/1909e0.jpg', 'Asset/609e0.jpg', 'Asset/2009e0.jpg', 'Asset/1509e0.jpg'];
-let currentImageIndex = 0;
-let popupActive = false;
 
-function openPopup(src) {
-    document.querySelector('.popup-img img').src = src;
+// Image Source Arrays for each card
+const imageSources = [
+    ['Asset/1409e0.jpg', 'Asset/1909e0.jpg', 'Asset/609e0.jpg', 'Asset/2009e0.jpg', 'Asset/1509e0.jpg'], // for img1
+    ['Asset/909e0.jpg', 'Asset/1309e0.jpg', 'Asset/809e0.jpg', 'Asset/1609e0.jpg', 'Asset/1209e0.jpg', 'Asset/1709e0.jpg'], // for img2
+    ['Asset/3109e0.jpg', 'Asset/3209e0.jpg', 'Asset/3509e0.jpg', 'Asset/3409e0.jpg'], // for img3
+    ['Asset/02_509e0.jpg'], // for img4
+    ['Asset/209e0.jpg', 'Asset/709e0.jpg', 'Asset/409e0.jpg', 'Asset/509e0.jpg', 'Asset/609e0.jpg'], // for img5
+    ['Asset/0109e0.jpg', 'Asset/01_309e0.jpg', 'Asset/01_709e0.jpg'] // for img6
+];
+
+// Current index trackers for each card
+let currentImageIndices = [0, 0, 0, 0, 0, 0]; // Adjust the number based on your actual number of cards
+
+// Function to change image in popup
+function changePopupImage(imageSrc) {
+    document.querySelector('.popup-img img').src = imageSrc;
+}
+
+// Function to open popup and start cycling images for a specific card
+function openPopup(cardIndex) {
+    changePopupImage(imageSources[cardIndex][currentImageIndices[cardIndex]]);
     document.querySelector('.popup-img').style.display = "block";
-    popupActive = true;
+    document.querySelector('.popup-img').dataset.cardIndex = cardIndex; // Store current card index in popup for reference
 }
 
-function closePopup() {
+// Event Listeners for Images
+document.querySelectorAll('.card-container .card-img-top').forEach((image, index) => {
+    image.addEventListener('click', function () {
+        openPopup(index);
+    });
+});
+
+// Event Listener for Closing the Popup
+document.querySelector('.popup-img .times').addEventListener('click', function () {
     document.querySelector('.popup-img').style.display = "none";
-    popupActive = false;
-}
+});
 
-function changeImg() {
-    if (popupActive) {
-        currentImageIndex = (currentImageIndex + 1) % imageSources.length;
-        document.querySelector('.popup-img img').src = imageSources[currentImageIndex];
-    } else {
-        let displayImg = document.querySelector('.img1');
-        openPopup(displayImg.src);
-    }
-}
-
-document.querySelector('.img1').addEventListener('click', changeImg);
-document.querySelector('.popup-img img').addEventListener('click', changeImg);
-document.querySelector('.popup-img .times').addEventListener('click', closePopup);
-
-// Repeat similar functions for other image sets (imageSources1, imageSources2, etc.)
-
-const imageSources1 = ['Asset/909e0.jpg', 'Asset/1309e0.jpg', 'Asset/809e0.jpg', 'Asset/1609e0.jpg', 'Asset/1209e0.jpg', 'Asset/1709e0.jpg'];
-let currentImageIndex1 = 0;
-
-function changeImg1() {
-    if (popupActive) {
-        currentImageIndex1 = (currentImageIndex1 + 1) % imageSources1.length;
-        document.querySelector('.popup-img img').src = imageSources1[currentImageIndex1];
-    } else {
-        let displayImg1 = document.querySelector('.img2');
-        openPopup(displayImg1.src);
-    }
-}
-
-document.querySelector('.img2').addEventListener('click', changeImg1);
-
-// Repeat for the other images
-
-const imageSources2 = ['Asset/3309e0.jpg', 'Asset/3209e0.jpg', 'Asset/3509e0.jpg', 'Asset/3409e0.jpg'];
-let currentImageIndex2 = 0;
-
-function changeImg2() {
-    if (popupActive) {
-        currentImageIndex2 = (currentImageIndex2 + 1) % imageSources2.length;
-        document.querySelector('.popup-img img').src = imageSources2[currentImageIndex2];
-    } else {
-        let displayImg2 = document.querySelector('.img3');
-        openPopup(displayImg2.src);
-    }
-}
-
-document.querySelector('.img3').addEventListener('click', changeImg2);
-
-const imageSources4 = ['Asset/209e0.jpg', 'Asset/709e0.jpg', 'Asset/409e0.jpg', 'Asset/509e0.jpg', 'Asset/609e0.jpg'];
-let currentImageIndex4 = 0;
-
-function changeImg4() {
-    if (popupActive) {
-        currentImageIndex4 = (currentImageIndex4 + 1) % imageSources4.length;
-        document.querySelector('.popup-img img').src = imageSources4[currentImageIndex4];
-    } else {
-        let displayImg4 = document.querySelector('.img5');
-        openPopup(displayImg4.src);
-    }
-}
-
-document.querySelector('.img5').addEventListener('click', changeImg4);
-
-const imageSources5 = ['Asset/0109e0.jpg', 'Asset/01_309e0.jpg', 'Asset/01_709e0.jpg'];
-let currentImageIndex5 = 0;
-
-function changeImg5() {
-    if (popupActive) {
-        currentImageIndex5 = (currentImageIndex5 + 1) % imageSources5.length;
-        document.querySelector('.popup-img img').src = imageSources5[currentImageIndex5];
-    } else {
-        let displayImg5 = document.querySelector('.img6');
-        openPopup(displayImg5.src);
-    }
-}
-
-document.querySelector('.img6').addEventListener('click', changeImg5);
-
-// Event listener for closing the popup
-document.querySelector('.popup-img .times').addEventListener('click', closePopup);
+// Event Listener for Cycling through Popup Images
+document.querySelector('.popup-img img').addEventListener('click', function () {
+    const currentCardIndex = document.querySelector('.popup-img').dataset.cardIndex;
+    currentImageIndices[currentCardIndex] = (currentImageIndices[currentCardIndex] + 1) % imageSources[currentCardIndex].length;
+    changePopupImage(imageSources[currentCardIndex][currentImageIndices[currentCardIndex]]);
+});
